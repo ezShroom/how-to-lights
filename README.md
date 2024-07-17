@@ -1,15 +1,9 @@
 # how-to-lights
 
-To install dependencies:
+Teaches The People how to turn their lights on.
 
-```bash
-bun install
-```
+## Developing
 
-To run:
+This is a plain HTML and CSS project. To develop for it, simply clone the repository and start modifying files in the `public` directory!
 
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.1.20. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+To style it with Prettier (requires [Bun](https://bun.sh)), run `bun i` once to install Prettier, then `bun format` to format the code.
