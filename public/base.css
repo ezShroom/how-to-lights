@@ -1,0 +1,54 @@
+:root {
+	--color-bg: #f8f5dc;
+	--color-text: #343533;
+	--color-clickable: #555552;
+	--color-clickable-hover: #000;
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-bg: #343533; /* Dark background */
+		--color-text: #f8f5dc; /* Light text color */
+		--color-clickable: #bbb; /* Lighter link color for dark mode */
+		--color-clickable-hover: #fff; /* Even lighter on hover */
+	}
+}
+body {
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	margin: 40px auto;
+	max-width: 650px;
+	font-size: 18px;
+	padding: 1em;
+	font-family: 'Merriweather', 'Georgia', 'Times New Roman', Times, serif;
+}
+* {
+	line-height: 1.6em;
+}
+nav {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+a {
+	color: var(--color-clickable);
+	transition: color 0.5s ease;
+}
+a:hover {
+	color: var(--color-clickable-hover);
+}
+.linkbutton {
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 10px 0;
+	color: var(--color-clickable);
+	border: 1px solid var(--color-clickable);
+	text-decoration: none;
+	transition:
+		border-color 0.5s ease,
+		color 0.5s ease;
+	border-radius: 4px;
+}
+.linkbutton:hover {
+	border-color: var(--color-clickable-hover);
+	color: var(--color-clickable-hover);
+}
