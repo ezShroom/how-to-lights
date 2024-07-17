@@ -46,7 +46,7 @@ a:hover {
 	transition:
 		border-color 0.5s ease,
 		color 0.5s ease;
-	border-radius: 4px;
+	border-radius: 6px;
 }
 .linkbutton:hover {
 	border-color: var(--color-clickable-hover);
